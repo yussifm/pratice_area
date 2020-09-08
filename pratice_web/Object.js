@@ -37,3 +37,42 @@
 
 
 // <----------- using Classes --------->
+class User {
+
+
+    // constructor
+    constructor(name, email) {
+        this.name = name;
+        this.email = email;
+
+    }
+
+    // Method
+    display() {
+        console.log(this.email, this.name);
+    }
+
+}
+
+
+
+// <---------- Method chaining----------->
+// inheritance 
+class Admin extends User {
+    deleteUser(users) {
+        users = Users.filter(function u() {
+            return u.email != User.email;
+        });
+    }
+
+
+}
+var userone = new User("userone", "fyger");
+
+var usertwo = new User("UserTwo", "gmail");
+
+var Users = [userone, usertwo, admin];
+
+var admin = new Admin("me", "pass");
+admin.deleteUser(usertwo);
+console.log(Users);
