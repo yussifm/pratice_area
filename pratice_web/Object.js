@@ -91,13 +91,42 @@
 
 
 
-// optional augu
-function addPonies(ponies) {
-    let poniesInRace = [];
-    for (var i = 0; i < arguments.length; i++) {
-        poniesInRace.push(arguments[i]);
-        console.log(poniesInRace[i]);
-    }
+// // optional augu
+// function addPonies(ponies) {
+//     let poniesInRace = [];
+//     for (var i = 0; i < arguments.length; i++) {
+//         poniesInRace.push(arguments[i]);
+//         console.log(poniesInRace[i]);
+//     }
 
-}
-addPonies('Rainbow Dash', 'Pinkie Pie', 'honey dash');
+// }
+// addPonies('Rainbow Dash', 'Pinkie Pie', 'honey dash');
+
+
+// //better with rest operator 
+// function addPonies(...ponies) {
+//     let poniesInRace = [];
+//     for (let pony of ponies) {
+//         poniesInRace.push([pony]);
+
+//     }
+
+
+// }
+// addPonies('Rainbow Dash', 'Pinkie Pie', 'honey dash');
+
+// //Classes 
+
+// class Pony {
+//     constructor(...color) {
+//         this.color = color;
+//     }
+
+//     toString() {
+//         return `${this.color} pony`;
+//         // see that? It is another cool feature of ES2015, called template literals
+//         // we'll talk about these quickly!
+//     }
+// }
+// const bluePony = new Pony('blue', 'red');
+// console.log(bluePony.toString());
