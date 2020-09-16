@@ -27,52 +27,77 @@
 //     }
 // };
 
-
-
-
 // userone.login();
 // userone.logout();
 // usertwo.login();
 // usertwo.logout();
 
-
 // <----------- using Classes --------->
-class User {
+// class User {
+
+//     // constructor
+//     constructor(name, email) {
+//         this.name = name;
+//         this.email = email;
+
+//     }
+
+//     // Method
+//     display() {
+//         console.log(this.email, this.name);
+//     }
+
+// }
+
+// // <---------- Method chaining----------->
+// // inheritance
+// class Admin extends User {
+//     deleteUser(users) {
+//         users = Users.filter(function u() {
+//             return u.email != User.email;
+//         });
+//     }
+
+// }
+// var userone = new User("userone", "fyger");
+
+// var usertwo = new User("UserTwo", "gmail");
+
+// var Users = [userone, usertwo, admin];
+
+// var admin = new Admin("me", "pass");
+// admin.deleteUser(usertwo);
+// console.log(Users);
+
+// /Generators/;
+
+// function* gen() {
+//     yield "Apple";
+//     yield "Apple34";
+//     yield "Apple44";
+//     yield "Apple55";
+
+//     console.log("All done");
+//     return "all final done";
+// }
+
+// var genty = gen();
+// console.log(genty.next());
+// console.log(genty.next());
+// console.log(genty.next());
+// console.log(genty.next());
+// console.log(genty.next());
+// console.log(genty.next());
 
 
-    // constructor
-    constructor(name, email) {
-        this.name = name;
-        this.email = email;
 
-    }
-
-    // Method
-    display() {
-        console.log(this.email, this.name);
+// optional augu
+function addPonies(ponies) {
+    let poniesInRace = [];
+    for (var i = 0; i < arguments.length; i++) {
+        poniesInRace.push(arguments[i]);
+        console.log(poniesInRace[i]);
     }
 
 }
-
-
-
-// <---------- Method chaining----------->
-// inheritance 
-class Admin extends User {
-    deleteUser(users) {
-        users = Users.filter(function u() {
-            return u.email != User.email;
-        });
-    }
-
-
-}
-var userone = new User("userone", "fyger");
-
-var usertwo = new User("UserTwo", "gmail");
-
-var Users = [userone, usertwo, admin];
-
-var admin = new Admin("me", "pass");
-admin.deleteUser(usertwo);
-console.log(Users);
+addPonies('Rainbow Dash', 'Pinkie Pie', 'honey dash');
