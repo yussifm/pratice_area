@@ -130,3 +130,14 @@
 // }
 // const bluePony = new Pony('blue', 'red');
 // console.log(bluePony.toString());
+
+//promises, async, await;
+
+let one = async() => await setTimeout(() => console.log("one"), 4000);
+let two = () => console.log("two");
+let three = () => console.log("three");
+
+
+one();
+two();
+three();
