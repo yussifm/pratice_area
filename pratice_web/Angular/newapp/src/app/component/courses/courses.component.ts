@@ -12,7 +12,7 @@ export class CoursesComponent implements OnInit {
     id: 1,
     name: `Angular`,
   };
-  getname(name: string) {
+  getname(name: string): void {
     alert(name);
   }
 
