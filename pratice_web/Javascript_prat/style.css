@@ -1,0 +1,64 @@
+/* Container -1 */
+
+.container-1,
+.container-2,
+.container-3 {
+    border: 1px solid rgb(48, 4, 4);
+    width: 60%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.flex-box-container1 {
+    border: 1px solid black;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.flex-box-container1 div {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+/* conatiner-1 END */
+
+
+/* container-2  */
+
+.container-2 .flex-box-container2,
+#flexBox-rps {
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container-2 .flex-box-container2 img,
+.container-3 .flx-box-rps img {
+    width: 300px;
+    height: 150;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.705);
+    padding: 20px;
+}
+
+
+/* challenge 3 rock papar scssors */
+
+#flexBox-rps img {
+    width: 200px;
+    height: 170px;
+    margin: 5%;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+#flexBox-rps img:hover {
+    background-color: rgba(247, 244, 74, 0.87);
+    box-shadow: 0px 10px 40px rgba(230, 7, 126, 0.705);
+}
