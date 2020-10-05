@@ -165,7 +165,7 @@ function btnReset() {
 }
 
 function btnRandom() {
-    for (let i = 0; i < all_buttons.length; i++) {
+    for (var i = 0; i < all_buttons.length; i++) {
         all_buttons[i].classList.remove(all_buttons[i].classList[1]);
         var color_chioc = [
             "btn-danger",
