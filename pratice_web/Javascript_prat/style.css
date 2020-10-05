@@ -2,7 +2,8 @@
 
 .container-1,
 .container-2,
-.container-3 {
+.container-3,
+.container-4 {
     border: 1px solid rgb(48, 4, 4);
     width: 60%;
     margin: 10px auto;
@@ -32,11 +33,14 @@
 /* container-2  */
 
 .container-2 .flex-box-container2,
-#flexBox-rps {
+#flexBox-rps,
+.flex-box-pickcolor {
     display: flex;
     border: 1px solid black;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 5%;
+    padding: 20px;
 }
 
 .container-2 .flex-box-container2 img,

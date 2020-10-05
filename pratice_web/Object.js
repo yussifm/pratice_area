@@ -89,8 +89,6 @@
 // console.log(genty.next());
 // console.log(genty.next());
 
-
-
 // // optional augu
 // function addPonies(ponies) {
 //     let poniesInRace = [];
@@ -102,8 +100,7 @@
 // }
 // addPonies('Rainbow Dash', 'Pinkie Pie', 'honey dash');
 
-
-// //better with rest operator 
+// //better with rest operator
 // function addPonies(...ponies) {
 //     let poniesInRace = [];
 //     for (let pony of ponies) {
@@ -111,11 +108,10 @@
 
 //     }
 
-
 // }
 // addPonies('Rainbow Dash', 'Pinkie Pie', 'honey dash');
 
-// //Classes 
+// //Classes
 
 // class Pony {
 //     constructor(...color) {
@@ -133,14 +129,13 @@
 
 //promises, async, await;
 
-let one = async() => await setTimeout(() => console.log("one"), 4000);
-let two = () => console.log("two");
-let three = () => console.log("three");
+// let one = async() => await setTimeout(() => console.log("one"), 4000);
+// let two = () => console.log("two");
+// let three = () => console.log("three");
 
+// one();
+// two();
+// three();
 
-one();
-two();
-three();
-
-
-https: //www.youtube.com/watch?v=X-vjBas_pTU&list=PLsjmv9aDmNDAN5adZxbGTlQHlgU2je7KE
+// javascript algorithms
+// K-closets-points
