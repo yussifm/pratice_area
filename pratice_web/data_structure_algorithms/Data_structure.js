@@ -90,6 +90,7 @@
 //   }
 //   mat(): any {
 //     for (let i = 0; i <= this.num_Rows; i++) {
+//arr[i] =[];
 //       for (let j = 0; j <= this.num_col; j++) {
 //         this.col[j] = this.init;
 //       }
@@ -104,28 +105,63 @@
 // Q 1
 // Create a grades object that stores a set of student grades in an object.Provide a
 // function for adding a grade and a function for displaying the student’s grade average.
-var student_grades = /** @class */ (function () {
-    function student_grades() {
-        this.stu_gr = [];
+// class student_grades {
+//   protected stu_gr: Array<number> = [];
+//   gra_add(grade): void {
+//     this.stu_gr.push(grade);
+//   }
+//   dispay(): number {
+//     var total = 0;
+//     for (let i = 0; i < this.stu_gr.length; i++) {
+//       total += this.stu_gr[i];
+//     }
+//     return total / this.stu_gr.length;
+//   }
+// }
+// var student1 = new student_grades();
+// student1.gra_add(2);
+// student1.gra_add(5);
+// student1.gra_add(3);
+// student1.gra_add(23);
+// student1.gra_add(13);
+// student1.gra_add(112);
+// student1.gra_add(11);
+// console.log(student1.dispay());
+var Stack = /** @class */ (function () {
+    function Stack() {
+        this.top = 0;
+        this.storage = [];
     }
-    student_grades.prototype.gra_add = function (grade) {
-        this.stu_gr.push(grade);
+    Stack.prototype.pop = function () {
+        return this.storage[--this.top];
     };
-    student_grades.prototype.dispay = function () {
-        var total = 0;
-        for (var i = 0; i < this.stu_gr.length; i++) {
-            total += this.stu_gr[i];
-        }
-        return total / this.stu_gr.length;
+    Stack.prototype.push = function (element) {
+        this.storage[++this.top] = element;
     };
-    return student_grades;
+    Stack.prototype.peek = function () {
+        return this.storage[this.top - 1];
+    };
+    Stack.prototype.clear = function () {
+        this.top = 0;
+    };
+    Stack.prototype.length = function () {
+        return this.top;
+    };
+    return Stack;
 }());
-var student1 = new student_grades();
-student1.gra_add(2);
-student1.gra_add(5);
-student1.gra_add(3);
-student1.gra_add(23);
-student1.gra_add(13);
-student1.gra_add(112);
-student1.gra_add(11);
-console.log(student1.dispay());
+var s = new Stack();
+s.push("David");
+s.push("Raymond");
+s.push("Bryan");
+console.log("length: " + s.length());
+console.log(s.peek());
+var popped = s.pop();
+console.log("The popped element is: " + popped);
+console.log(s.peek());
+s.push("Cynthia");
+console.log(s.peek());
+s.clear();
+console.log("length: " + s.length());
+console.log(s.peek());
+s.push("Clayton");
+console.log(s.peek());
