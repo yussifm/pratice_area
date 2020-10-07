@@ -1,0 +1,7 @@
+{
+  "javascript.format.semicolons": "insert",
+
+  "jshint.options": {
+    "esversion": 6
+  }
+}

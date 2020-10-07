@@ -156,39 +156,65 @@
 
 // console.log(student1.dispay());
 
-class Stack {
-  top: number = 0;
-  storage: any = [];
-  pop() {
-    return this.storage[--this.top];
+// class Stack {
+//   top: number = 0;
+//   storage: any = [];
+//   pop() {
+//     return this.storage[--this.top];
+//   }
+//   push(element: any) {
+//     this.storage[++this.top] = element;
+//   }
+//   peek() {
+//     return this.storage[this.top - 1];
+//   }
+//   clear() {
+//     this.top = 0;
+//   }
+//   length() {
+//     return this.top;
+//   }
+// }
+
+// var s = new Stack();
+// s.push("David");
+// s.push("Raymond");
+// s.push("Bryan");
+// console.log("length: " + s.length());
+// console.log(s.peek());
+// var popped = s.pop();
+// console.log("The popped element is: " + popped);
+// console.log(s.peek());
+// s.push("Cynthia");
+// console.log(s.peek());
+// s.clear();
+// console.log("length: " + s.length());
+// console.log(s.peek());
+// s.push("Clayton");
+// console.log(s.peek());
+
+//  Link_List
+
+class Node_ {
+  data: number;
+  next: Node_;
+  prev: Node_;
+
+  constructor(Data: number) {
+    this.data = Data;
   }
-  push(element: any) {
-    this.storage[++this.top] = element;
-  }
-  peek() {
-    return this.storage[this.top - 1];
-  }
-  clear() {
-    this.top = 0;
-  }
-  length() {
-    return this.top;
+  countNode(head: Node_): number {
+    var count: number = 0;
+    var current: Node_ = head;
+
+    while (current.next !== null) {
+      current = current.next;
+      count++;
+    }
+    return count;
   }
 }
 
-var s = new Stack();
-s.push("David");
-s.push("Raymond");
-s.push("Bryan");
-console.log("length: " + s.length());
-console.log(s.peek());
-var popped = s.pop();
-console.log("The popped element is: " + popped);
-console.log(s.peek());
-s.push("Cynthia");
-console.log(s.peek());
-s.clear();
-console.log("length: " + s.length());
-console.log(s.peek());
-s.push("Clayton");
-console.log(s.peek());
+var ll = new Node_(6);
+var rl = new Node_(3);
+var el = new Node_(7);

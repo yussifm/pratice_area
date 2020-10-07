@@ -127,41 +127,59 @@
 // student1.gra_add(112);
 // student1.gra_add(11);
 // console.log(student1.dispay());
-var Stack = /** @class */ (function () {
-    function Stack() {
-        this.top = 0;
-        this.storage = [];
+// class Stack {
+//   top: number = 0;
+//   storage: any = [];
+//   pop() {
+//     return this.storage[--this.top];
+//   }
+//   push(element: any) {
+//     this.storage[++this.top] = element;
+//   }
+//   peek() {
+//     return this.storage[this.top - 1];
+//   }
+//   clear() {
+//     this.top = 0;
+//   }
+//   length() {
+//     return this.top;
+//   }
+// }
+// var s = new Stack();
+// s.push("David");
+// s.push("Raymond");
+// s.push("Bryan");
+// console.log("length: " + s.length());
+// console.log(s.peek());
+// var popped = s.pop();
+// console.log("The popped element is: " + popped);
+// console.log(s.peek());
+// s.push("Cynthia");
+// console.log(s.peek());
+// s.clear();
+// console.log("length: " + s.length());
+// console.log(s.peek());
+// s.push("Clayton");
+// console.log(s.peek());
+//  Link_List
+var Node_ = /** @class */ (function() {
+    function Node_(Data) {
+        this.data = Data;
     }
-    Stack.prototype.pop = function () {
-        return this.storage[--this.top];
+    Node_.prototype.countNode = function(head) {
+        var count = 0;
+        var current = head;
+        while (current.next !== null) {
+            current = current.next;
+            count++;
+        }
+        return count;
     };
-    Stack.prototype.push = function (element) {
-        this.storage[++this.top] = element;
-    };
-    Stack.prototype.peek = function () {
-        return this.storage[this.top - 1];
-    };
-    Stack.prototype.clear = function () {
-        this.top = 0;
-    };
-    Stack.prototype.length = function () {
-        return this.top;
-    };
-    return Stack;
+    return Node_;
 }());
-var s = new Stack();
-s.push("David");
-s.push("Raymond");
-s.push("Bryan");
-console.log("length: " + s.length());
-console.log(s.peek());
-var popped = s.pop();
-console.log("The popped element is: " + popped);
-console.log(s.peek());
-s.push("Cynthia");
-console.log(s.peek());
-s.clear();
-console.log("length: " + s.length());
-console.log(s.peek());
-s.push("Clayton");
-console.log(s.peek());
+var ll = new Node_(6);
+var rl = new Node_(3);
+var el = new Node_(7);
+
+let dis;
