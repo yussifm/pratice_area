@@ -196,25 +196,9 @@
 //  Link_List
 
 class Node_ {
-  data: number;
+  data: any;
   next: Node_;
   prev: Node_;
 
-  constructor(Data: number) {
-    this.data = Data;
-  }
-  countNode(head: Node_): number {
-    var count: number = 0;
-    var current: Node_ = head;
-
-    while (current.next !== null) {
-      current = current.next;
-      count++;
-    }
-    return count;
-  }
+ 
 }
-
-var ll = new Node_(6);
-var rl = new Node_(3);
-var el = new Node_(7);

@@ -1,11 +1,15 @@
-<h1>{{course.name | uppercase}}</h1>
+<div class="content">
+    <h1>{{course.nam | uppercase}}</h1>
 
-<p>id:{{course.id}}</p>
-<button (click)="getname('coded')"> get alert</button>
+    <p>
+        <h5>
+            {{menbers.names}}
+        </h5>
+        <h5>
+            {{menbers.ages}}
+        </h5>
+        <h5>
+            {{menbers.gender}}
+        </h5>
 
-<div>
-    <form>
-        <label>name:
-      <input type="text" placeholder="name"></label>
-    </form>
 </div>

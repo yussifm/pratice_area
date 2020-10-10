@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Courses } from '../course';
+import { Courses, Menbers } from '../course';
 
 @Component({
   selector: 'app-courses',
@@ -11,10 +11,14 @@ export class CoursesComponent implements OnInit {
   course: Courses = {
     id: 1,
     name: `Angular`,
+    nam: 'Web Develoment HUb',
   };
-  getname(name: string): void {
-    alert(name);
-  }
+
+  menbers: Menbers = {
+    names: 'coded',
+    ages: 22,
+    gender: 'M',
+  };
 
   ngOnInit(): void {}
 }

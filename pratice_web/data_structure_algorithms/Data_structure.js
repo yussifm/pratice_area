@@ -163,11 +163,11 @@
 // s.push("Clayton");
 // console.log(s.peek());
 //  Link_List
-var Node_ = /** @class */ (function() {
+var Node_ = /** @class */ (function () {
     function Node_(Data) {
         this.data = Data;
     }
-    Node_.prototype.countNode = function(head) {
+    Node_.prototype.countNode = function (head) {
         var count = 0;
         var current = head;
         while (current.next !== null) {
@@ -181,5 +181,3 @@ var Node_ = /** @class */ (function() {
 var ll = new Node_(6);
 var rl = new Node_(3);
 var el = new Node_(7);
-
-let dis;
